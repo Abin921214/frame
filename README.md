@@ -12,7 +12,10 @@
           public class TestController extends ApiBaseControlller<SysUser, SysUserExample, SysUserService>  implements                               BaseOperation<SysUser, SysUserExample>
           【BaseOperation 里面包含了在实现对应接口是需要对数据的处理操作功能[根据自己项目的需求自定义验证或者操作数据]】
           注：此时实现了对某数据进行增删改查操作[接口风格 restful] ， 如果需要实现自定义api 的时候根据具体情况自定义操作
-          
+   four: 需要实现对应日志【已注解标记  @OperLog 通过切面处理类，操作日志异常日志记录处理@OperLog】
+         
+
+
     对接netty tcp 操作【StringUtil 中包含了基本上对应设备需要的方法】：
     根据 frametest中的实例 --- 通过 @WebListener 实现对应某一端口进行监听同时 调用 NettyServer服务启动对应的netty服务
     启动netty 服务前需要做几个操作：
