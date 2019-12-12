@@ -1,7 +1,7 @@
 # frame
 从今天开始整合自己用过的框架，无论是java, 小程序，android 等其他的技术，后期项目做到了或者学习到了都会记录在这里
 
-#frame 框架简介
+## frame 框架简介
    结合springMVC + spring + mybaites + netty + (springColud可以根据项目需求再定是否使用 springColud服务端我用的是nacos) 用idea搭建的技术,主要是    基于gui 自动生成来实现的，基础的增删改查可以直接导入自动生成的就可以实现，不用自己去写相应的代码。自定义的就需要自己去书写了。大大提高了效率和节省时    间【同时这个框架实现了netty tcp 开发】
 
    frist: 从项目中下载 frame-xbin-1.0.jar 包导入到你的项目中
@@ -13,7 +13,7 @@
           【BaseOperation 里面包含了在实现对应接口是需要对数据的处理操作功能[根据自己项目的需求自定义验证或者操作数据]】
           注：此时实现了对某数据进行增删改查操作[接口风格 restful] ， 如果需要实现自定义api 的时候根据具体情况自定义操作
           
-    对接netty tcp 操作：
+    对接netty tcp 操作【StringUtil 中包含了基本上对应设备需要的方法】：
     根据 frametest中的实例 --- 通过 @WebListener 实现对应某一端口进行监听同时 调用 NettyServer服务启动对应的netty服务
     启动netty 服务前需要做几个操作：
     
